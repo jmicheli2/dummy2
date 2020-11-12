@@ -26,7 +26,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         // set delegate must be before setRegion. Why ????
         
         mapView.delegate = self
-        print("after set delegate")
+        print("after set delegate here")
       
         let region = MKCoordinateRegion( center: london.coordinate, latitudinalMeters: CLLocationDistance(exactly: 500000)!, longitudinalMeters: CLLocationDistance(exactly: 500000)!)
         mapView.setRegion(mapView.regionThatFits(region), animated: true)
